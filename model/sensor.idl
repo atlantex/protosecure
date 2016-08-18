@@ -1,0 +1,10 @@
+const long SENSOR_UNITS_MAX_LEN = 20;
+const long SENSOR_ID_MAX_LEN = 20;
+
+
+struct SensorReadingType {
+	string<SENSOR_ID_MAX_LEN> sensorId; //@key
+	float sensorValue;
+	string<SENSOR_UNITS_MAX_LEN> sensorUnits;
+};
+	
